@@ -2,33 +2,22 @@
 CSC 131 repository for our eShopping Platform project
 
 ## Project information:
-eShopping Platform, called Whole Eats Shopping, will be an online web-based ecommerce application designed to allow shoppers to view gorcery products, purchase itemsm and rate produts; the site admistrator will be able to add and to update the store catelogue.
+Our project is a shopping website that allows users to manage a shopping cart and place orders. Shoppers are also allowed to login, search and browse products, favorite products, remove or add to the shopping cart, have them provide their address and make payments using a card. Admin access and inventory management will also be supported. For this second iteration of our eShopping Prototype, we are developing the database tier for our platform using SQlite. 
 
-For this prototype (iteration 1), we will be running this on a Live Server, where only each of us (teammates) can run a local copy of the same code and files, through our GitHub repository. We chose to do this for this iteration because this is our :first draft" and the design is still in some progress, or will require some touch ups. This is also a more instant way for us to update and deploy our UI for now, though we do plan on hosting through the cloud in later iterations.
+## Database:
+The data that the project will store on a secondary storage includes user and admin information, payment information, shopper addresses, products and their details, product quantities, shopping carts, orders and favorite products. This data will be used to manage purchases, process deliveries and payments, take care of inventory management, manage customer and admin accounts and keep track of shopping cart activity
 
-## Architecture diagram:
-![Architecture Diagram](docs/architecture-diagram.png)
-[Link to Architecture Diagram](https://drive.google.com/file/d/1hDKMWY_BMAV58rRlNNusPq_NC8KRzsF3/view?usp=sharing)
-## Development tools:
-We got all of our picture for the products on Unsplash, as well as using Git and GitHub/GitHub desktop to share our team's repository and commiting, pushing, and pulling.
+## Represented in NoSQL:
+If we chose to use No_SQL, we could use a database such as MongoDB to store our data in a document database. For example, one object we could create would be the shopping cart. Each product in the shopping cart would also be an object. This would allow us to create one document for a cart, which can contain multiple products. The keys could be int item_id, string item_name, int quantity and double cost. An example of values for these keys for the item would be 123, “Apple”, 5, and 3.75. 
 
-Languages: 
-    - HTML for page structures
-    - CSS for styling and the webpage layout
-    - JavaScript for building the product cards and the buttons
+## Summary:
 
-Design:
-    the UI design was built on Figma and translated into our coded files after deciding on a webpage layout.
-    [Figma UI design](https://www.figma.com/design/O17IRjnLFpuI3aRzZYNW5a/Product-page-design--Community-?node-id=0-1&p=f&t=PJOpQNJD2gzNdShP-0) 
 
-Environment:
-    We used a few different enviroments to develop this first iteration such as: VS Code, and Live servers. We used VS Code as our main code editor and the Live Server to locally preview our saves on the files.
+## INdividual Reflection:
+Hailey: 
 
-## Reflection:
-Hailey: For this part of the project, I worked on the front-end development of the UI design. I helped add to our css, js, and html files to achieve what we wanted to for this first iteration of our project. One thing I found somewhat challenging was figuring out the languages, since I haven't used any of them before; after doing a bit of research and getting some help, I was able to figure it out and get a grasp on how the language work independently as well as along with each other to build a [visual] webpage. A challenge I felt that we had as a group was not being able to work together in person, as it can be difficult not being able to directly communicate to each other.
+Fatema:  
 
-Fatema: For our first prototype, we decided to work on the UI, so mainly front-end development. After the determining the design we wanted for the UI, I assisted in the front-end development process and worked with VS code, html, css, and javascript to build the UI prototype. It was definitely challenging to work on the UI because I had to get learn how to use all three languages cohesively. I am fairly new to both css and Javascript, so it took time and effort to learn how to work with them. One challenge the team faced was communication. This definitely slowed us down a bit. As for our plans for the next iteration, we still plan on continuing our work on the UI, but we will dive more into the middleware and back-end development as well to add some features/functions to the project (redirect to different pages, etc). 
-
-Kylie: For this design I helped start and create the design for the webpage, using Figma. It was challenging at first to figure out how to design the website and what tools to use at first, so I had to research that. I also created the architecture diagram, which I based off of our whole project, rather than just the one webpage we created. Another challenge I felt was that because we were so busy with exams, we didn't have a lot of time to discuss our prototype in person. For the next iteration, we will continue with this design and add onto it. As a group, we are more familiar with the tools we used now, so the project should go smoother from now on. 
+Kylie:
     
-Joe:I set up the initial project structure and pushed it to GitHub which allowed for a collaborative workflow. I had to some research and see what folder structure would work best for the project. Considering the nature of the project, went with client and eventual server folder structure. Only the folders and files needed for the current prototype were created. One challenge I had was figuring out the proper Git commands when it comes to the collaborative aspects of Git/GitHub but after searching online, i figured out the process and workflow.
+Joe:
